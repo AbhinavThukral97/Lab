@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abhinav Thukral &middot; Lab</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<section>
+	<div class="content">
+		<h6>Abhinav Thukral / Lab</h6>
+		<h1><a href="../"><i class="fas fa-arrow-left back-button"></i></a> Add Project</h1>
+		{{#if error}}
+		<div class="error">{{error}}</div>
+		{{/if}}
+		{{#if success}}
+		<div class="success">{{success}}</div>
+		{{/if}}
+		<form class="fullbox" action="/add" method="post">
+			<div class="form-text"><span>Project Name</span></div>
+			<input type="text" id="name" name="name">
+
+			<div class="form-text"><span>Description</span></div>
+			<textarea id="description" name="description"></textarea>
+
+			<div class="form-text"><span>Date</span></div>
+			<input type="text" id="date" name="date">
+
+			<div class="form-text"><span>Project Status</span></div>
+			<input type="text" id="status" name="status">
+
+			<div class="form-text"><span>Tags</span></div>
+			<input type="text" id="tags" name="tags">
+
+			<div class="form-text"><span>Client</span></div>
+			<input type="text" id="client" name="client">
+
+			<div class="form-text"><span>Link</span></div>
+			<input type="text" id="link" name="link">
+
+			<div class="form-text"><span>Image Path</span></div>
+			<input type="text" id="imagePath" name="imagePath">
+
+			<div class="form-text"><span>Page</span></div>
+			<textarea id="page" name="page"></textarea>
+
+			<div class="form-text"><span>Comments</span></div>
+			<textarea id="comments" name="comments"></textarea>
+
+			<div class="form-text"><span>Admin Password</span></div>
+			<input type="password" id="password" name="password">
+
+			<input type="submit" name="submit" value="Add Project">
+		</form>
+	</div>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

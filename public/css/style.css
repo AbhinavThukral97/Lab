@@ -1,0 +1,333 @@
+body
+{
+	margin: auto;
+	background: #ecf0f1;
+}
+
+*
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+	padding: 50px 0px;
+}
+
+.content
+{
+	width: 80%;
+	margin: auto;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+h6
+{
+	font-size: .9em;
+	font-weight: 400;
+	color: #2d3436;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 5px 0px;
+}
+
+h1
+{
+	font-size: 2.5em;
+	font-weight: 400;
+	color: #2d3436;
+	margin: 5px 0px;
+	margin-top: 20px;
+}
+
+h1.page
+{
+	margin: 10px 0px;
+}
+
+h5
+{
+	font-size: 1em;
+	font-weight: 600;
+	color: #2d3436;
+	margin: 5px 0px;
+}
+
+form
+{
+	margin: 20px 0px;
+	background: #FFF;
+}
+
+form.box
+{
+	padding: 30px;
+	width: 350px;
+	border-radius: 10px;
+}
+
+form.fullbox
+{
+	padding: 30px;
+	width: calc(100% - 60px);
+	border-radius: 10px;
+}
+
+form .form-text
+{
+	font-size: .85em;
+	padding: 10px 5px;
+}
+
+form.box .form-text
+{
+	padding: 0px 5px;
+}
+
+input,textarea
+{
+	padding: 15px;
+	border: 2px solid rgba(0,0,0,.1);
+	outline: none;
+	transition: .5s ease;
+	display: block;
+	border-radius: 5px;
+	margin: 5px 0px;
+	font-size: 1.2em;
+	width: calc(100% - 40px);
+	background: none;
+}
+
+input[type="submit"]
+{
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: none;
+	background: rgba(74, 105, 189,1.0);
+	color: #FFF;
+	width: auto;
+	cursor: pointer;
+	border: 2px solid transparent;
+	font-size: .8em;
+}
+
+input:focus,textarea:focus
+{
+	border: 2px solid rgba(74, 105, 189,1.0);
+}
+
+textarea
+{
+	min-height: 100px;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+p 
+{
+	line-height: 1.75;
+	text-align: justify;
+	color: #636e72;
+}
+
+.split
+{
+	width: 100%;
+	padding: 50px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.split .tile
+{
+	width: 200px;
+	margin-right: 30px;
+}
+
+.split .tile .name
+{
+	text-transform: uppercase;
+	color: #636e72;
+	letter-spacing: 2px;
+	font-size: .8em;
+	margin: 5px 0px;
+}
+
+.split .tile .value
+{
+	color: #2d3436;
+	font-weight: 400;
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+table
+{
+	margin: 35px 0px;
+	width: 100%;
+	border-collapse: collapse;
+	//border: 1px solid #c8d6e5;
+}
+
+tr
+{
+	cursor: pointer;
+	transition: .5s ease;
+}
+
+tr:hover
+{
+	background: rgba(255,255,255,.1);
+}
+
+th
+{
+	background: #dfe6e9;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .7em;
+
+}
+
+th:nth-child(1){
+	min-width: 100px;
+}
+
+th,td
+{
+	padding: 10px;
+	margin: 0;
+	//border-top: 1px solid #c8d6e5;
+	border-bottom: 1px solid #c8d6e5;
+	transition: .4s ease;
+}
+
+td
+{
+	font-size: .75em;
+}
+
+td b
+{
+	font-weight: 500;
+	color: rgba(74, 105, 189,1.0);
+}
+
+td .fas
+{
+	color: #576574;
+	transition: .5s ease;
+	padding: 5px;
+}
+
+td .fas:hover
+{
+	color: rgba(74, 105, 189,1.0);
+}
+
+td.hovered
+{
+	opacity: 0;
+}
+
+tr:hover>td.hovered
+{
+	opacity: 1;
+}
+
+tr.hide
+{
+	display: none;
+}
+
+input.search
+{
+	font-size: 1em;
+	background: #FFF;
+	padding: 20px;
+	border:none !important;
+	margin: 20px 0px;
+}
+
+.error
+{
+	padding: 10px 20px;
+	background: rgba(237, 76, 103,.2);
+	border-radius: 10px;
+	color: rgba(237, 76, 103,1.0);
+	font-size: .8em;
+	font-weight: 500;
+}
+
+.success
+{
+	padding: 10px 20px;
+	background: rgba(16, 172, 132,.2);
+	border-radius: 10px;
+	color: rgba(16, 172, 132,1.0);
+	font-size: .8em;
+	font-weight: 500;
+}
+
+.title-wrap
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+button
+{
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: none;
+	background: rgba(74, 105, 189,1.0);
+	color: #FFF;
+	width: auto;
+	cursor: pointer;
+	border: 2px solid transparent;
+	font-size: .8em;
+	border-radius: 5px;
+	outline: none;
+	transition: .5s ease;
+}
+
+button .fas
+{
+	margin-right: 10px;
+}
+
+button:hover
+{
+	box-shadow: 0 0 0 .4rem rgba(74, 105, 189,.2);
+}
+
+.back-button
+{
+	transform: scale(.5);
+	padding: 10px;
+	color: rgba(131, 149, 167,1.0);
+	cursor: pointer;
+	position: relative;
+	left: 0;
+	transition: .5s ease;
+}
+
+.back-button:hover
+{
+	left: -10px;
+	color: rgba(74, 105, 189,1.0);
+}
+
+input[class="delete"]
+{
+	background: #ED4C67;
+}

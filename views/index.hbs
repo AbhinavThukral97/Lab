@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abhinav Thukral &middot; Lab</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<section>
+	<div class="content">
+		<h6>Abhinav Thukral / Lab</h6>
+		<div class="title-wrap"><h1>My Projects</h1><a href="/add"><button><i class="fas fa-plus"></i> Add Project</button></a></div>
+		<input type="text" name="search" class="search" placeholder="Search">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Date</th>
+				<th>Tags</th>
+				<th>Status</th>
+				<th>Client</th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tbody>
+			{{#each projects}}
+			<tr class="project">
+				<td><a href="project/{{this.name}}"><b>{{this.name}}</b></a></td>
+				<td>{{this.date}}</td>
+				<td>{{this.tags}}</td>
+				<td>{{this.status}}</td>
+				<td>{{this.client}}</td>
+				<td align="center" class="hovered"><a href={{this.link}} target="_blank"><i class="fas fa-external-link-alt"></i></a></td>
+				<td class="hovered"><a href="edit/{{this.name}}"><i class="fas fa-pen"></i></a></td>
+			</tr>
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abhinav Thukral &middot; Lab</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<section>
+	<div class="content">
+		<h6>Abhinav Thukral / Lab</h6>
+		<h1><a href="../"><i class="fas fa-arrow-left back-button"></i></a> Edit Project</h1>
+		{{#if error}}
+		<div class="error">{{error}}</div>
+		{{/if}}
+		{{#if success}}
+		<div class="success">{{success}}</div>
+		{{/if}}
+		<form class="fullbox" method="post" action="/edit/{{project.name}}">
+			<div class="form-text"><span>Project Name</span></div>
+			<input type="text" id="name" name="name" value="{{project.name}}">
+
+			<div class="form-text"><span>Description</span></div>
+			<textarea id="description" name="description">{{project.description}}</textarea>
+
+			<div class="form-text"><span>Date</span></div>
+			<input type="text" id="date" name="date" value="{{project.date}}">
+
+			<div class="form-text"><span>Project Status</span></div>
+			<input type="text" id="status" name="status" value="{{project.status}}">
+
+			<div class="form-text"><span>Tags</span></div>
+			<input type="text" id="tags" name="tags" value="{{project.tags}}">
+
+			<div class="form-text"><span>Client</span></div>
+			<input type="text" id="client" name="client" value="{{project.client}}">
+
+			<div class="form-text"><span>Link</span></div>
+			<input type="text" id="link" name="link" value="{{project.link}}">
+
+			<div class="form-text"><span>Image Path</span></div>
+			<input type="text" id="imagePath" name="imagePath" value="{{project.imagePath}}">
+
+			<div class="form-text"><span>Page</span></div>
+			<textarea id="page" name="page">{{project.page}}</textarea>
+
+			<div class="form-text"><span>Comments</span></div>
+			<textarea id="comments" name="comments">{{project.comments}}</textarea>
+
+			<div class="form-text"><span>Admin Password</span></div>
+			<input type="password" id="password" name="password">
+
+			<input type="submit" name="submit" value="Update Project">
+		</form>
+		<form class="fullbox" method="post" action="/delete/{{project.name}}">
+			<div class="form-text"><span>Admin Password</span></div>
+			<input type="password" id="password" name="password">
+
+			<input class="delete" type="submit" name="submit" value="Delete Project">
+		</form>
+	</div>
+</section>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
